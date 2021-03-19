@@ -16,10 +16,33 @@ header{
 }
 
 h1{
-	font-size: 40px;
+	font-size: 48px;
 	font-weight: bold;
 	font-family: "Open Sans", sans-serif;
+	padding: 50px;
 }
+
+h2{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serif;
+	padding: 10px;
+}
+
+
+p {
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+
+}
+
+#homeparagraphtext{
+	font-size: 28px;
+}
+
 
 
 img{
@@ -59,30 +82,6 @@ img{
 	margin-bottom: 0px;
   }
 
-h2{
-	font-size: 25px;
-	font-weight: bold;
-	font-family: "Open Sans", sans-serif;
-}
-
-
-h1, h2 {
-	padding: 50px;
-	font-family: "Open Sans", sans-serif;
-}
-
-p {
-	padding: 15px;
-	padding-left: 50px;
-	padding-right: 50px;
-	font-family: "Open Sans", sans-serif;
-	font-size: 20px;
-
-}
-
-#homeparagraphtext{
-	font-size: 24px;
-}
 
 
 /* FOOTER */
@@ -91,7 +90,7 @@ p {
 	width:100%;
 	background: #471455;
 	text-align:center;
-	margin-top: 200px;
+	margin-top: 300px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 15px;
@@ -243,6 +242,50 @@ nav a{
 
   }
 
+/* CONTACT FORM  */
+
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 20px;
+	border: 2px solid rgb(70, 70, 70);
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	resize: vertical;
+	font-family: "Open Sans", sans-serif;
+	font-size: 100%
+  }
+
+  /* submit button*/
+  input[type=submit] {
+	background-color: #471455;
+	color: white;
+	padding: 20px 60px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: "Open Sans", sans-serif;
+	font-size: 100%;
+  }
+
+  /* hover over submit button*/
+  input[type=submit]:hover {
+	background-color: #340b3f;
+  }
+
+  /* background color and padding */
+  .contact-form {
+	border-radius: 5px;
+	background-color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top: 75px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 100%
+  }
+
+
   .container{
 	display: grid;
 	grid-row-gap: 20px;
@@ -251,8 +294,7 @@ nav a{
   }
 
   /* GRID ON 'THE TEAM' PAGE */
-  @media only screen and (min-width: 680px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 680px) {
   .container{
 	display: grid;
 	grid-row-gap: 20px;
@@ -391,8 +433,7 @@ header{
 
 
 
-  @media only screen and (min-width: 1200px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  @media only screen and (min-width: 1200px) {
 	.container{
 		display: grid;
 		grid-row-gap: 20px;
@@ -511,50 +552,13 @@ header{
 
 	  }
 
+	  .contact-form {
+		margin-left: 200px;
+		margin-right: 200px;
+	  }
+
 	}
 
-/* CONTACT FORM  */
-
-input[type=text], select, textarea {
-	width: 100%; /* Full width */
-	padding: 20px;
-	border: 2px solid rgb(70, 70, 70);
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	resize: vertical;
-	font-family: "Open Sans", sans-serif;
-	font-size: 100%
-  }
-
-  /* submit button*/
-  input[type=submit] {
-	background-color: #471455;
-	color: white;
-	padding: 20px 60px;
-	border: none;
-	border-radius: 10px;
-	cursor: pointer;
-	font-family: "Open Sans", sans-serif;
-	font-size: 100%;
-  }
-
-  /* hover over submit button*/
-  input[type=submit]:hover {
-	background-color: #340b3f;
-  }
-
-  /* background color and padding */
-  .contact-form {
-	border-radius: 5px;
-	background-color: white;
-	margin-left: 50px;
-	margin-right: 50px;
-	padding-top: 75px;
-	font-family: "Open Sans", sans-serif;
-	font-size: 100%
-  }
 
 /* ANIMATION */
   #galleryimage{
@@ -586,8 +590,8 @@ input[type=text], select, textarea {
 
 #logo{
 
-   animation-name: logo_grow;
-   -webkit-animation-name: logo_grow;
+   animation-name: logo_slidein;
+   -webkit-animation-name: logo_slidein;
    animation-duration: 2s;
    border: none;
    max-height: 150px;
@@ -601,19 +605,23 @@ input[type=text], select, textarea {
 	width: auto;
 }
 
- @-webkit-keyframes logo_grow {
+ @-webkit-keyframes logo_slidein {
 
 
- from {
-   opacity: 0;
+	from {
+		opacity: 0;
+		margin-top: -100px;
+		transform: rotate(0.5turn);
+	  }
+
+	  to {
+		opacity: 1;
+		top: 0px;
+	  }
+
  }
- to {
-   opacity: 1;
- }
 
- }
-
- @keyframes logo_grow {
+ @keyframes logo_slidein {
    from {
 	 opacity: 0;
 	 margin-top: -100px;
@@ -685,39 +693,6 @@ input[type=text], select, textarea {
 	border: none;
 }
 
-
-/* The alert message box */
-/* .alert {
-	padding: 20px;
-	background-color: #471455;
-	color: white;
-	margin-top: 50px;
-	margin-bottom: 15px;
-	margin-left: 50px;
-	margin-right: 250px;
-	box-shadow: black;
-	font-family: "Open Sans";
-	font-size: 20px;
-	border: #cd5700;
-	border-width: 4px;
-	border-style: solid;
-  }
-
-  .closebtn {
-	margin-left: 15px;
-	margin-bottom: 10px;
-	color: white;
-	font-weight: bold;
-	float: right;
-	font-size: 40px;
-	line-height: 20px;
-	cursor: pointer;
-	transition: 0.3s;
-  }
-
-  .closebtn:hover {
-	color: #cd5700;
-  } */
 
 
 /* REDUCE MOTION */
