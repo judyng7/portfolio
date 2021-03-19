@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imgs/catfavicon.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Contact</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1111V9B0MF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1111V9B0MF');
+</script>
+
+</head>
+
+<body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
+	<header>
+		<img src="imgs/logo.png" alt="logo" id = "logosize">
+		<nav>
+			<ul class="nav_links">
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "availablecats.html">Available Cats</a></li>
+				<li><a href = "adoptedcats.html">Adopted Cats</a></li>
+				<li><a href = "theteam.html">The Team</a></li>
+				<li><a class="activepage" href = "contact.html">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+
+	<main id="main">
+
+	<h1>Contact</h1>
+
+	<p>Hello! Please reach out to us via the below contact form if you are interested in meeting one of our cats, or if you have any general questions or comments.</p>
+	<p>We will respond within 3-5 business days. We appreciate your patience. We are currently seeking volunteers, and we welcome donations in the form of money or pet supplies.</p>
+
+	<img src="https://media.giphy.com/media/hT6LIJ3SB5xpPqvNG5/giphy.gif" class = "gif" alt="animated cat" />
+
+		<div class="contact-form">
+
+				<form action="https://formspree.io/f/xbjpngyg" method="POST">
+
+			  <label for="fname">First Name</label>
+			  <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+
+			  <label for="lname">Last Name</label>
+			  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+			  <label for="reason">Reason</label>
+			  <select id="reason" name="reason">
+				<option value="question">Question</option>
+				<option value="comment">Comment</option>
+				<option value="requestmeetandgreet">Request Meet and Greet with Cat</option>
+				<option value="donation">Donation</option>
+			  </select>
+
+			  <label for="message">Message</label>
+			  <textarea id="message" name="message" placeholder="Type here..." style="height:200px"></textarea>
+
+			  <input type="submit" value="Submit">
+
+			</form>
+		  </div>
+
+
+
+	</main>
+	<footer>
+		<p>Judy Ng &copy; 2021</p>
+	</footer>
+</body>
+</html>
+
+
