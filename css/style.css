@@ -18,7 +18,7 @@ header{
 h1{
 	font-size: 40px;
 	font-weight: bold;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 }
 
 
@@ -54,27 +54,28 @@ img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: auto;
+	max-width: 300px;
+	height: auto;
 	margin-bottom: 0px;
   }
 
 h2{
 	font-size: 25px;
 	font-weight: bold;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 }
 
 
 h1, h2 {
 	padding: 50px;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 }
 
 p {
 	padding: 15px;
 	padding-left: 50px;
 	padding-right: 50px;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 
 }
@@ -138,7 +139,7 @@ nav{
   background-color: #fdfdfd;
   padding: 10px;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 
 }
 
@@ -221,7 +222,7 @@ nav a{
 	background: #fdfdfd;
 	padding: 20px 20px 20px 20px;
 	flex-basis: 100px;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
   }
 
   .info > header{
@@ -350,7 +351,7 @@ nav a{
 	background-color: #c3bdd0;
 	padding: 10px;
 	text-align: center;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	margin-bottom: 20px;
   }
 
@@ -491,7 +492,7 @@ header{
 		padding: 10px;
 		margin-bottom: 20px;
 		text-align: right;
-		font-family: "Open Sans";
+		font-family: "Open Sans", sans-serif;
 	  }
 
 	  header{
@@ -523,7 +524,7 @@ input[type=text], select, textarea {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	resize: vertical;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 100%
   }
 
@@ -535,7 +536,7 @@ input[type=text], select, textarea {
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 100%;
   }
 
@@ -548,10 +549,10 @@ input[type=text], select, textarea {
   .contact-form {
 	border-radius: 5px;
 	background-color: white;
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-left: 50px;
+	margin-right: 50px;
 	padding-top: 75px;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 100%
   }
 
