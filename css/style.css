@@ -181,6 +181,35 @@ nav a{
 
   }
 
+/* MARGIN FOR NAV ON THE TEAM PAGE */
+.theteamnav{
+	margin-bottom: 0px;
+}
+
+/* IMAGE STYLE IN THE GRID*/
+  .imagegrid{
+	margin: 50px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+/* H2 AND P STYLE IN THE GRID */
+.h2textgrid{
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: #cd5700;
+}
+
+.ptextgrid{
+	padding-left: 50px;
+	padding-bottom: 40px;
+	padding-top: 0px;
+	padding-right: 50px;
+}
+
+
+
   .infocontainer{
 	  display: flex;
 	  flex-direction: column;
@@ -255,6 +284,26 @@ nav a{
   .person-d-text, .person-d-image{
 	grid-row: 4 / span 1;
   }
+
+  .imagegrid{
+	margin-left: 50px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+  .h2textgrid{
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: #cd5700;
+}
+
+	.ptextgrid{
+		padding-left: 10px;
+		padding-bottom: 50px;
+		padding-top: 0px;
+		padding-right: 40px;
+}
 
 	.homeheading{
 		grid-row: 1 / span 1;
@@ -460,34 +509,8 @@ header{
 		min-width: 500px;
 
 	  }
+
 	}
-
-/* MARGIN FOR NAV ON THE TEAM PAGE */
-.theteamnav{
-	margin-bottom: 0px;
-}
-
-/* IMAGE STYLE IN THE GRID*/
-  .imagegrid{
-	margin: 50px;
-	margin-top: 10px;
-	margin-bottom: 40px;
-}
-
-/* H2 AND P STYLE IN THE GRID */
-.h2textgrid{
-	padding-left: 50px;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	color: #cd5700;
-}
-
-.ptextgrid{
-	padding-left: 50px;
-	padding-bottom: 60px;
-	padding-top: 0px;
-	padding-right: 50px;
-}
 
 /* CONTACT FORM  */
 
