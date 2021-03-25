@@ -16,7 +16,7 @@ header{
 }
 
 h1{
-	font-size: 48px;
+	font-size: 44px;
 	font-weight: bold;
 	font-family: "Open Sans", sans-serif;
 	padding: 50px;
@@ -40,7 +40,7 @@ p {
 }
 
 #homeparagraphtext{
-	font-size: 28px;
+	font-size: 24px;
 }
 
 
@@ -561,14 +561,14 @@ header{
 
 
 /* ANIMATION */
-  #galleryimage{
+  .galleryimage{
 
 	filter: grayscale(1);
  	animation-name: slidein;
   	animation-duration: 2s;
 }
 
-#galleryimage:hover{
+.galleryimage:hover{
 	filter: grayscale(0);
 	border: solid #cd5700;
 	border-radius: 20px;
@@ -687,7 +687,7 @@ header{
 	transform: rotateY(180deg);
   }
 
-  #flipcardimage {
+  .flipcardimage {
 	padding: 15px;
 	margin: 0px;
 	border: none;
@@ -698,10 +698,10 @@ header{
 /* REDUCE MOTION */
 
   @media all and (prefers-reduced-motion:reduce){
-	#galleryimage{
+	.galleryimage{
 		animation: none;
 	}
-	#galleryimage:hover{
+	.galleryimage:hover{
 		transform: none;
 	}
 	.parallaximage {
